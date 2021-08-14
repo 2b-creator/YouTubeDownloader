@@ -1,0 +1,16 @@
+F:\Csharp\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe.config
+F:\Csharp\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe
+F:\Csharp\YoutubeDownloader\bin\Debug\YoutubeDownloader.pdb
+F:\Csharp\YoutubeDownloader\obj\Debug\MainWindow.g.cs
+F:\Csharp\YoutubeDownloader\obj\Debug\App.g.cs
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader_MarkupCompile.cache
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader_MarkupCompile.lref
+F:\Csharp\YoutubeDownloader\obj\Debug\MainWindow.baml
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.g.resources
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.Properties.Resources.resources
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.GenerateResource.cache
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CoreCompileInputs.cache
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.exe
+F:\Csharp\YoutubeDownloader\obj\Debug\YoutubeDownloader.pdb
+F:\Csharp\YoutubeDownloader\obj\Debug\Window1.g.cs
+F:\Csharp\YoutubeDownloader\obj\Debug\Window1.baml

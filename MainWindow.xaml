@@ -1,0 +1,60 @@
+﻿<Window x:Class="YoutubeDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YoutubeDownloader"
+        mc:Ignorable="d"
+        Title="YouTubeDownloader" Height="450" Width="800" Closed="Window_Closed" ResizeMode="CanMinimize" Icon="video.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="67467647_p0.jpg" Stretch="UniformToFill" Opacity="0.3"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="774" Margin="10,10,0,0">
+            <Label Content="YouTube视频下载器" HorizontalAlignment="Left" Margin="267,21,0,0" VerticalAlignment="Top" FontSize="22"/>
+        </Grid>
+        <Label Content="单个视频快速下载" HorizontalAlignment="Left" Margin="38,93,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="dlurl" HorizontalAlignment="Left" Height="34" Margin="197,93,0,0" TextWrapping="Wrap" Text="请输入视频地址" VerticalAlignment="Top" Width="390" FontSize="18"/>
+        <Button x:Name="GoDownloader" Content="GO!" HorizontalAlignment="Left" Margin="623,93,0,0" VerticalAlignment="Top" Width="111" Height="29" Click="GoDownloader_Click"/>
+        <Label Content="多视频下载设置" HorizontalAlignment="Left" Margin="38,153,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="前往配置" HorizontalAlignment="Left" Margin="197,153,0,0" VerticalAlignment="Top" Width="110" Height="35" FontSize="18" Click="Button_Click"/>
+        <Grid HorizontalAlignment="Left" Height="192" Margin="10,218,0,0" VerticalAlignment="Top" Width="774">
+            <Label Content="应用设置" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="下载保存路径" HorizontalAlignment="Left" Margin="35,45,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="SavePath" HorizontalAlignment="Left" Height="23" Margin="122,45,0,0" TextWrapping="Wrap" Text="请勿使用此功能" VerticalAlignment="Top" Width="182" MouseLeftButtonDown="SavePath_MouseLeftButtonDown" PreviewMouseLeftButtonDown="SavePath_MouseLeftButtonDown"/>
+            <Label Content="下载选项" HorizontalAlignment="Left" Margin="46,76,0,0" VerticalAlignment="Top"/>
+            <StackPanel HorizontalAlignment="Left" Height="63" Margin="122,82,0,0" VerticalAlignment="Top" Width="182">
+                <RadioButton x:Name="Merge" GroupName="Download" IsChecked="True">音频与视频结合</RadioButton>
+                <RadioButton x:Name="Divide" GroupName="Download">音频与视频分离</RadioButton>
+                <RadioButton x:Name="Video" GroupName="Download">只下载视频</RadioButton>
+                <RadioButton x:Name="Audio" GroupName="Download">只下载音频</RadioButton>
+            </StackPanel>
+            <Label Content="字幕下载" HorizontalAlignment="Left" Margin="309,45,0,0" VerticalAlignment="Top"/>
+            <StackPanel Margin="372,48,228,78">
+                <RadioButton GroupName="srt" IsChecked="True">不下载字幕</RadioButton>
+                <RadioButton x:Name="subzh" GroupName="srt">下载中文字幕</RadioButton>
+                <RadioButton x:Name="suben" GroupName="srt">下载英文字幕</RadioButton>
+                <RadioButton x:Name="transsubzh" GroupName="srt">下载自动翻译的中文字幕</RadioButton>
+            </StackPanel>
+            <Label Content="下载格式" HorizontalAlignment="Left" Margin="309,113,0,0" VerticalAlignment="Top"/>
+            <StackPanel Margin="372,119,328,40">
+                <RadioButton GroupName="format" IsChecked="true">mp4</RadioButton>
+                <RadioButton GroupName="format">mkv</RadioButton>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Left" Margin="553,50,0,0" TextWrapping="Wrap" Text="配置代理" VerticalAlignment="Top"/>
+            <TextBox x:Name="proxyIP" HorizontalAlignment="Left" Height="22" Margin="614,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+            <Label Content="请输入ip" HorizontalAlignment="Left" Margin="551,73,0,0" VerticalAlignment="Top" FontSize="10"/>
+            <CheckBox Content="使用本机代理" HorizontalAlignment="Left" Margin="614,103,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+            <Label Content="请选择协议" HorizontalAlignment="Left" Margin="547,124,0,0" VerticalAlignment="Top" FontSize="9"/>
+            <StackPanel Margin="606,124,35,22">
+                <RadioButton GroupName="proxy" IsChecked="True">http</RadioButton>
+                <RadioButton GroupName="proxy">socks:5</RadioButton>
+                <RadioButton GroupName="proxy">tcp</RadioButton>
+            </StackPanel>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>

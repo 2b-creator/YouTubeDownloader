@@ -1,0 +1,18 @@
+﻿<Window x:Class="YoutubeDownloader.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YoutubeDownloader"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800" Icon="config.png" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="QQ图片20210723200434.jpg" Stretch="UniformToFill" Opacity="0.3"/>
+        </Grid.Background>
+        <Label Content="请在下面的文本框中输入所有的视频地址，按空格换行分开所有网址" HorizontalAlignment="Left" Margin="33,21,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="AllURLtext" HorizontalAlignment="Left" Height="261" Margin="10,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="774"/>
+        <Button Content="完成并下载" HorizontalAlignment="Left" Margin="336,353,0,0" VerticalAlignment="Top" Width="104" Height="47" Click="Button_Click"/>
+
+    </Grid>
+</Window>
